@@ -1,0 +1,13 @@
+openmeteo_requests
+requests-cache
+pandas
+numpy
+retry-requests
+pytz
+python-dotenv
+pysolar
+openpyxl
+joblib
+scikit-learn
+xgboost
+requests
