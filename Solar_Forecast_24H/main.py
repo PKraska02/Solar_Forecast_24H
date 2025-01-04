@@ -8,3 +8,4 @@ if __name__ == '__main__':
     prediction = generate_prediction(df)
     print(prediction)
     sent_data_to_plot(prediction)
+ 

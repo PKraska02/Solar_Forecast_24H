@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-HA_URL = "http://your-home-assistant:8123"
+HA_URL = "http://192.168.202.115:8124/"
 HA_TOKEN = os.getenv("HA_TOKEN")
 SENSOR_ENTITY_ID = "sensor.solarforecastAI"
 
@@ -17,9 +17,9 @@ def sent_data_to_plot(data):
     }
 
     payload = {
-        "state": data.mean(),  # Możesz ustawić średnią lub dowolną wartość jako stan główny
+        "state": "On",  # Konwersja na standardowy float
         "attributes": {
-            "values": data.tolist()  # Przesyłanie NumPy array jako lista w atrybutach
+            "values": [float(x) for x in data]  # Konwersja wszystkich wartości na float
         }
     }
 
@@ -33,3 +33,4 @@ def sent_data_to_plot(data):
     else:
         print(f"Failed to send data. Status code: {response.status_code}")
         print(f"Error: {response.text}")
+

@@ -80,4 +80,4 @@ def generate_OpenMeteo_data(latitude, longitude, panel_tilt: int = 45, timezone=
     hourly_dataframe = pd.DataFrame(data=hourly_data)
     hourly_dataframe["date"] = hourly_dataframe["date"].dt.tz_convert(warsaw_tz).dt.tz_localize(None)
     hourly_dataframe.to_excel("OpenMeteoAPI_forecast.xlsx")
-
+    return hourly_dataframe
