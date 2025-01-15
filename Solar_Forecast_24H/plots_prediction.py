@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-HA_URL = "http://Your.url"
+HA_URL = os.getenv("HA_URL")
 HA_TOKEN = os.getenv("HA_TOKEN")
 SENSOR_ENTITY_ID = "sensor.solarforecastAI"
 
