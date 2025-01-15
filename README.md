@@ -31,10 +31,5 @@ In addition, the Terminal & SSH add-on must be downloaded.
 **Step 1. Add .env file**
 .env file is neccessary for the integration to work properly.
 .env must contain 5 elements:
-'''
-LATITUDE = xx.xx
-LONGITUDE = xx.xx
-POWER = x.xx
-HA_URL = http://homeassistant.local:8123
-HA_TOKEN = xxxxxxxx
-'''
+'''LATITUDE = xx.xx LONGITUDE = xx.xx POWER = x.xx HA_URL = http://homeassistant.local:8123 HA_TOKEN = xxxxxxxx
+
