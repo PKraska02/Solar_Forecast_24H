@@ -102,7 +102,7 @@ lovelace:
 ```
 # Automation
 To automate the refreshing of forecasts with cronetab you need to:
-- open Terminal
+- open terminal
 - apk add openrc --no-cache
 - apk add tini --no-cache
 - cp -p run_forecast /etc/periodic/daily
