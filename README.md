@@ -8,5 +8,5 @@ Home Assistant Extension to forecast PV electricity production the next day
 - [Important notes](#Important-notes)
 
 # Introduction
-![Example prediction plot](Images/image1.png)
+![Example prediction plot](Images/Image1.png)
 
