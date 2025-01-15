@@ -16,6 +16,7 @@ It allows us to easily check the predicted production of our photovoltaic panels
 In order for the charts to function correctly, the components listed need to be downloaded:
 - UI Lovelace Minimalist
 - apexchart-card
+
 These components can be downloaded via [HACS]("https://hacs.xyz")
 In addition, the Terminal & SSH add-on must be downloaded.
 
